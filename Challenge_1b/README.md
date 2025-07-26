@@ -23,8 +23,7 @@ No fluff, just focused insights tailored to who you are and what you’re trying
 
 📁 How the Project is Structured
 ```
-├── persona_analyzer.py    
-├── requirements.txt  
+├── persona_analyzer.py     
 ├── Dockerfile   
 ├── /input
 │   ├── input.json 
