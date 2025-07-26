@@ -71,8 +71,8 @@ docker run --rm \
 # 🔎 A Glimpse at the Output
 
 {
-  "metadata": {
   
+  "metadata": {
     "input_documents": ["doc1.pdf", "doc2.pdf"],
     
     "persona": "UX Researcher",
@@ -86,7 +86,6 @@ docker run --rm \
   "sections": [
   
     {
-    
       "document": "doc1.pdf",
       
       "page_number": 3,
