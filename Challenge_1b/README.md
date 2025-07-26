@@ -22,22 +22,15 @@ This is our solution for Adobe India Hackathon 2025 – Challenge 1b, and it’s
 No fluff, just focused insights tailored to who you are and what you’re trying to do.
 
 📁 How the Project is Structured
-
-
+```
 ├── persona_analyzer.py    
-
 ├── requirements.txt  
-
 ├── Dockerfile   
-
 ├── /input
-
 │   ├── input.json 
-
 │   └── *.pdf    
-
 └── /output
-    └── result.json           
+    └── result.json ```          
 # 🐳 Run It Like a Pro (in Docker)
 1️⃣ Build the Image
 
