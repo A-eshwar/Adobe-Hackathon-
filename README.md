@@ -68,7 +68,7 @@ Containerization	Docker
 
 │   └── output/
 
-├── challenge-1b/   
+.├── challenge-1b/   
 
 │   ├── persona_analyzer.py
 
