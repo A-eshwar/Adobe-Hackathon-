@@ -26,6 +26,38 @@ Edit
 │   ├── input/ 
 
 │   └── output/     
+# 📦 Setup
+1. Clone the repository
+bash
+Copy
+Edit
+
+git clone ""
+
+3. Add PDF files
+Place all your PDF documents inside the /app/input/ folder (it will be created in the container automatically).
+
+4. Add Python dependencies
+Create a file called requirements.txt (or reuse the one below):
+
+txt
+Copy
+Edit
+
+PyMuPDF==1.22.5
+
+4. Build the Docker Image
+bash
+Copy
+Edit
+
+docker build -t pdf-outline-extractor .
+5. Run the Container
+bash
+Copy
+Edit
+
+docker run --rm -v $(pwd)/app/input:/app/input -v $(pwd)/app/output:/app/output pdf-outline-extractor
 
 # 🧪 Sample Output
 For a PDF like Learn Acrobat - Edit_1.pdf, it will generate an output JSON in app/output/Learn Acrobat - Edit_1.json like:
