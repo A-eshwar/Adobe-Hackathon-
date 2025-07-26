@@ -14,7 +14,8 @@ This project is built for Adobe India Hackathon 2025 – Challenge 1a and is all
 🐳 Fully containerized – run it anywhere without setup headaches!
 
 🗂 Folder Structure
-.
+
+
 ├── pdf_extractor.py
 
 ├── requirements.txt
