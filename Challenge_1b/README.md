@@ -71,6 +71,7 @@ docker run --rm \
 # 🔎 A Glimpse at the Output
 
 {
+
   "metadata": {
     "input_documents": ["doc1.pdf", "doc2.pdf"],
     "persona": "UX Researcher",
@@ -78,6 +79,7 @@ docker run --rm \
     "sections_selected": 10,
     "timestamp": "2025-07-26T18:30:00Z"
   },
+  
   "sections": [
     {
       "document": "doc1.pdf",
@@ -95,7 +97,8 @@ docker run --rm \
     }
   ]
 }
-🧠 What’s Under the Hood
+
+# 🧠 What’s Under the Hood
 Python 3.9
 
 PyMuPDF (fitz) for extracting text with style
