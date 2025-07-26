@@ -54,33 +54,21 @@ Structure Logic	Regex + Heuristic Scoring
 Containerization	Docker
 
 ## 🗂 Project Structure
-
-.
+```
 ├── challenge-1a/        
-
 │   ├── pdf_extractor.py
-
 │   ├── Dockerfile
-
 │   ├── requirements.txt
-
 │   ├── input/
-
 │   └── output/
-
-.├── challenge-1b/   
-
+├── challenge-1b/   
 │   ├── persona_analyzer.py
-
 │   ├── Dockerfile
-
 │   ├── requirements.txt
-
 │   ├── input/
-
 │   └── output/
-
-└── README.md                
+└── README.md
+ ```              
 
 ## 🏁 How to Run
 Each challenge folder (challenge-1a/ and challenge-1b/) is fully self-contained with its own:
