@@ -14,43 +14,42 @@ This project is built for Adobe India Hackathon 2025 – Challenge 1a and is all
 🐳 Fully containerized – run it anywhere without setup headaches!
 
 🗂 Folder Structure
-bash
-Copy
-Edit
 .
 ├── pdf_extractor.py
+
 ├── requirements.txt
+
 ├── Dockerfile 
+
 ├── /input
+
 └── /output     
 # ⚙ How to Use It (The Easy Way: Docker)
 ## 1. 🔨 Build the Image
-bash
-Copy
-Edit
-docker build -t pdf-outline-extractor .
+
+docker build -t pdf-outline-extractor 
 ## 2. 📥 Add PDFs
 Put all your PDFs inside a folder called input in the project root.
 
 ## 3. 🚀 Run the Extractor
-bash
-Copy
-Edit
+
 docker run --rm \
   -v "$(pwd)/input":/app/input \
   -v "$(pwd)/output":/app/output \
   pdf-outline-extractor
+  
 That’s it! You’ll find beautifully structured JSON files waiting in the output/ folder.
 
 # 🧪 Example Output
 Here’s a peek at what you’ll get:
 
 json
-Copy
-Edit
+
 {
   "title": "Understanding AI Ethics",
+  
   "outline": [
+  
     {
       "level": "H1",
       "text": "Introduction",
@@ -67,8 +66,7 @@ Edit
 Make sure you’ve got Python 3.9 installed, then:
 
 bash
-Copy
-Edit
+
 pip install -r requirements.txt
 python pdf_extractor.py
 Just make sure you’ve got /input and /output folders created in the root!
