@@ -30,7 +30,8 @@ No fluff, just focused insights tailored to who you are and what you’re trying
 │   ├── input.json 
 │   └── *.pdf    
 └── /output
-    └── result.json ```          
+    └── result.json
+```          
 # 🐳 Run It Like a Pro (in Docker)
 1️⃣ Build the Image
 
