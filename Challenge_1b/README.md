@@ -82,9 +82,7 @@ docker run --rm \
     "sections_selected": 10,
     
     "timestamp": "2025-07-26T18:30:00Z"
-    
   },
-  
   "sections": [
   
     {
@@ -100,9 +98,7 @@ docker run --rm \
       "relevance_score": 0.9271
       
     }
-    
   ],
-  
   "subsections": [
   
     {
@@ -114,7 +110,6 @@ docker run --rm \
       "refined_text": "Most users consistently chose feature A over B, suggesting..."
       
     }
-    
   ]
 }
 
