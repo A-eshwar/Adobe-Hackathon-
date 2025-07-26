@@ -68,5 +68,7 @@ Make sure you’ve got Python 3.9 installed, then:
 bash
 
 pip install -r requirements.txt
+
 python pdf_extractor.py
+
 Just make sure you’ve got /input and /output folders created in the root!
