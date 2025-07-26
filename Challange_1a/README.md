@@ -28,11 +28,12 @@ docker build -t pdf-outline-extractor
 Put all your PDFs inside a folder called input in the project root.
 
 ## 3. 🚀 Run the Extractor
-
+```
 docker run --rm \
   -v "$(pwd)/input":/app/input \
   -v "$(pwd)/output":/app/output \
   pdf-outline-extractor
+```
   
 That’s it! You’ll find beautifully structured JSON files waiting in the output/ folder.
 
@@ -40,12 +41,10 @@ That’s it! You’ll find beautifully structured JSON files waiting in the outp
 Here’s a peek at what you’ll get:
 
 json
-
+```
 {
   "title": "Understanding AI Ethics",
-  
   "outline": [
-  
     {
       "level": "H1",
       "text": "Introduction",
@@ -58,6 +57,7 @@ json
     }
   ]
 }
+```
 # 🧰 Want to Run Locally?
 Make sure you’ve got Python 3.9 installed, then:
 
