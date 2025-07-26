@@ -53,48 +53,36 @@ Create an input.json like this:
 }
 
 3️⃣ Run It!
-
+```
 docker run --rm \
   -v "$(pwd)/input":/app/input \
   -v "$(pwd)/output":/app/output \
   pdf-analyzer
+```
 
 🎉 You'll find the results in output/result.json
 
 # 🔎 A Glimpse at the Output
-
+```
 {
-  
   "metadata": {
     "input_documents": ["doc1.pdf", "doc2.pdf"],
-    
     "persona": "UX Researcher",
-    
     "job": "analyze user behavior reports",
-    
     "sections_selected": 10,
-    
     "timestamp": "2025-07-26T18:30:00Z"
   },
   "sections": [
-  
     {
       "document": "doc1.pdf",
-      
       "page_number": 3,
-      
       "section_title": "Behavioral Patterns",
-      
       "importance_rank": 1,
-      
       "relevance_score": 0.9271
-      
     }
   ],
   "subsections": [
-  
     {
-    
       "document": "doc1.pdf",
       
       "page_number": 3,
@@ -104,7 +92,7 @@ docker run --rm \
     }
   ]
 }
-
+```
 # 🧠 What’s Under the Hood
 Python 3.9
 
