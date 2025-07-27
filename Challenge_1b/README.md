@@ -23,26 +23,33 @@ No fluff, just focused insights tailored to who you are and what you’re trying
 
 📁 How the Project is Structured
 ```
-├── persona_analyzer.py     
-├── Dockerfile   
-├── /input
-│   ├── input.json 
-│   └── *.pdf    
-└── /output
-    └── result.json
+Challenge_1b/
+├── Collection 1/                    # Travel Planning
+│   ├── PDFs/                       # South of France guides
+│   ├── challenge1b_input.json      # Input configuration
+│   └── challenge1b_output.json     # Analysis results
+├── Collection 2/                    # Adobe Acrobat Learning
+│   ├── PDFs/                       # Acrobat tutorials
+│   ├── challenge1b_input.json      # Input configuration
+│   └── challenge1b_output.json     # Analysis results
+├── Collection 3/                    # Recipe Collection
+│   ├── PDFs/                       # Cooking guides
+│   ├── challenge1b_input.json      # Input configuration
+│   └── challenge1b_output.json     # Analysis results
+└── README.md
 ```          
 # 🐳 Run It Like a Pro (in Docker)
 1️⃣ Build the Image
-
+```
 docker build -t pdf-analyzer .
-
+```
 2️⃣ Add Your Inputs
 Inside the input/ folder:
 
 Drop your PDF files (e.g., doc1.pdf, doc2.pdf)
 
 Create an input.json like this:
-
+```
 {
   "persona": { "role": "UX Researcher" },
   "job_to_be_done": { "task": "analyze user behavior reports" },
@@ -51,7 +58,7 @@ Create an input.json like this:
     { "filename": "doc2.pdf" }
   ]
 }
-
+```
 3️⃣ Run It!
 ```
 docker run --rm \
